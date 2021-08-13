@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Parallax Scrollling Website | Vanila Javascript</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
+
+<head>
+    <title>Parallax Scrollling Website | Vanila Javascript</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
 </html>
+
 <body>
     <header>
         <a href="#" class="logo">Logo</a>
-            <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+        <ul>
+            <li><a href="#" class="active">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Trabalho</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
     </header>
     <section>
         <img src="./images/stars.png" id="stars">
         <img src="./images/moon.png" id="moon">
         <img src="./images/mountains_behind.png" id="mountains_behind">
-        <h2 id="text">Moon Light</h2>
-        <a href="#sec" id="btn">Explore</a>
+        <h2 id="text">Luz da Lua</h2>
+        <a href="#sec" id="btn">Explorar</a>
         <img src="./images/mountains_front.png" id="mountains_front">
     </section>
     <div class="sec" id="sec">
-        <h2>Parallax Scrollling Effects</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+        <h2>Efeitos de Parallax Scrollling</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+            essentially unchanged.
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+            Ipsum.<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+            essentially unchanged.
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+            Ipsum.<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+            essentially unchanged.
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
     </div>
     <script>
         let stars = document.getElementById('stars');
@@ -51,7 +60,7 @@
         let mountains_front = document.getElementById('mountains_front');
         let header = document.querySelector('header');
 
-        window.addEventListener('scroll', function(){
+        window.addEventListener('scroll', function () {
             let value = window.scrollY;
             stars.style.left = value * 0.25 + 'px';
             moon.style.top = value * 1.05 + 'px';
